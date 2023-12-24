@@ -1,0 +1,24 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>servlet</servlet-name>
+        <servlet-class>com.takeo.MainServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet</servlet-name>
+        <url-pattern>/servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>genericServlet</servlet-name>
+        <servlet-class>com.takeo.ServletGeneric</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>genericServlet</servlet-name>
+        <url-pattern>/genericServlet</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
